@@ -1,0 +1,31 @@
+aside.instructions
+	strong Instructions: 
+	| Daniel is the pickiest eater you've ever met. Feed him up to five food items to see if you can get him eating. Repeat food items is acceptable. To make things more challenging, try to choose an item from each food group.
+main.food-choices
+	.control-center
+		h4 Your chosen items:
+		ul.chosen-items
+			- for (var i=1; i<6; i++)
+				li
+		div
+			a.js-feed Feed me!
+			a.js-reset Reset
+		
+		
+		.avatar
+			.avatar__hair
+			.avatar__head
+				.avatar__eyes.left
+				.avatar__eyes.right
+				.avatar__mouth
+			.avatar__ears.left
+			.avatar__ears.right
+			.avatar__coat
+				.avatar__shirt
+		h5.response
+		p
+			| Daniel says: "
+			span.response-dialog Feed me!
+			| "
+	
+	
